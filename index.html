@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Arekosandoru & Fedor Morozov">
+    <meta name="description" content="" />
+    <title>BadBoy VapeShop</title>
+    <link rel="shortcut icon" href="img/222.ico" type="image/x-icon">
+    <link rel="icon" href="img/222.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll" style="font-family: 'Rye', cursive;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Навигация</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span class="redcolor">B</span>ad
+                    <span class="redcolor">B</span>oy
+                    <span class="redcolor">Vape</span>Shop</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav" style="font-family: 'Rye', cursive;">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">О нас</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Товары</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#order">Заказ и оплата</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#cont">Контакты</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll"><span class="redcolor"">
+                         <i class="fa fa-phone fa-fw"></i></span>
+                          +7-(371)-280-57-37</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="services" class="services-section">
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-1 col-sm-push-5  col-sm-6">
+                        <h2 class="section-heading text-center"><span style="font-family: Intro;">Добро пожаловать!</span> <span  class="redcolor">18+</span></h2>
+                        <p class="lead" style="font-family: Intro;">
+                            Лучшие жидкости из мира вейпинга у нас в наличии! Наш магазин специализируется на продаже электронных сигарет и жидкостей к ним!</p>
+                        <h3 class="text-center redcolor" style="font-family: Intro; font-size: 40px;">
+                    Если ты</h3>
+                        <p class="lead" style="font-family: Intro;">Хочешь вкусно попарить, но погода/лень/больная кошка мешают выйти из дома? Гуляешь по городу, а рядом нет ни одного вейпшопа? Не беда!</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-pull-7  col-sm-6">
+                        <img class="img-responsive vapeHead" src="img/vapehead1.png" alt="vape">
+                    </div>
+                </div>
+                <div class="col-md-12 text-center" style="margin-bottom: 100px;">
+                    <p class="pOrderFromUs"><b>Заказывай у нас и мы доставим 
+				выбранные жидкости прямо в твои руки <span class="redcolor">:)</span></b></p>
+                    <br>
+                    <button class="btn btn-danger open_modal" id="but1" style="font-family: Intro; font-size: 20px;">Отправить заявку!</button>
+                </div>
+                <!-- тут бы модальный div для кнопки -->
+                <!-- <div class="open_modal"><p>Открыть модальное окно</p></div> -->
+                <div class="overlay"></div>
+                <div class="popup">
+                    <div class="close_modal">x</div>
+                    <form class="fofm" action="">
+                        <h5>Форма обратной связи</h5>
+                        <input type="text" required="" placeholder="Имя" name="txtname">
+                        <input type="email" placeholder="Email" name="txtemail">
+                        <input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="" placeholder="Телефон" name="txtphone">
+                        <textarea name="txtmessage" placeholder="Описание" rows="10"></textarea>
+                        <label>
+                            <input type="checkbox">Я не робот</label>
+                        <input type="hidden" name="valTrFal" class="valTrFal" value="valTrFal_disabled">
+                        <input type="submit" class="button" value="Отправить" disabled="disabled" name="btnsend">
+                    </form>
+                </div>
+                <div class="popup2">
+                    <div class="close_modal">x</div>
+                    <div class="window">
+                        <div class="insText">
+                            <h5>Запрос отправлен</h5>
+                            <p><strong>Ваш запрос отправлен.</strong>Наш менеджер свяжется с вами в ближайшее время!</p>
+                            <hr>
+                            <p>Предлагаем подробную информацию по продукции:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- <div class="top-border">
+	<div class="top-border-left" style="border-left-width: 717px;"></div>
+	<div class="top-border-right" style="border-left-width: 717px;"></div>
+</div> -->
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-notquiteblack" style="padding-top: 55px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color: white">Каталог</h2>
+                    <h3 class=""><a href="https://vk.com/badboykrsk" target="_blank" style="color: rgb(152, 6, 20);">Полный каталог</a>
+                    <span style="color: white">Вы можете посмотреть<br>
+                    в нашей группе <span><b>VKONTAKTE</b></span><span>
+                    <br>
+                    <br>
+                    <a href="https://vk.com/market-116240707" target="_blank" style="color: black;">
+                    <button class="btn btn-danger btntovk">Перейти к каталогу</button></a></h3>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row minirow">
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow" id="CatalogItem">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/3.jpg" class="img-responsive imgbox" alt="" style="margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Vape Wild Fruit Bomb 30мл; 3мг</h4>
+                        <br>
+                        <p class="redcolorbold">750 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/4.jpg" class="img-responsive imgbox" alt="" style="margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Vape Wild Bubble Pop 30мл; 3 мг</h4>
+                        <br>
+                        <p class="redcolorbold">750 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/5.jpg" class="img-responsive imgbox" alt="" style="height: 300px; margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Vape Wild Cowboy Cooler 30мл; 3 мг</h4>
+                        <p class="redcolorbold">750 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/6.jpg" class="img-responsive imgbox" alt="" style="margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Vape Wild Smurf Cake 30 мл; 3 мг</h4>
+                        <p class="redcolorbold">750 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/7.jpg" class="img-responsive imgbox" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Acid P. Raspberry Milkshake 30мл; 3/0 мг</h4>
+                        <p class="redcolorbold">600 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/8.jpg" class="img-responsive imgbox" alt="" style="margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Acid P. Mangum 30мл; 3/0 мг</h4>
+                        <br>
+                        <p class="redcolorbold">600 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/9.jpg" class="img-responsive imgbox" alt="" style="margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Acid Punch Pinky Spike 30мл; 3мг</h4>
+                        <p class="redcolorbold">600 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/10.jpg" class="img-responsive imgbox" alt="" style="margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Wõrq MAÑA 30мл; 3/0 мг</h4>
+                        <br>
+                        <p class="redcolorbold">600 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/11.jpg" class="img-responsive imgbox" alt="" style="height: 300px; margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Wõrq KNÖS 30мл; 3/0 мг</h4>
+                        <br>
+                        <p class="redcolorbold">600 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/12.jpg" class="img-responsive imgbox" alt="" style="margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Wõrq 221b 30мл; 3/0 мг</h4>
+                        <br>
+                        <p class="redcolorbold">600 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/13.jpg" class="img-responsive imgbox" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Acid Punch Bubble Burst 30мл; 3,0 мг</h4>
+                        <p class="redcolorbold">500 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/14.jpg" class="img-responsive imgbox" alt="" style="margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Doppelganger Ebony Tower 30мл; 3мг</h4>
+                        <p class="redcolorbold">440 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/15.jpg" class="img-responsive imgbox" alt="" style="margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Doppelganger Desintegration 30мл; 3 мг</h4>
+                        <p class="redcolorbold">440 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/15.jpg" class="img-responsive imgbox" alt="" style="margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Doppelganger Immortal 30мл; 3 мгг</h4>
+                        <p class="redcolorbold">440 руб.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item whiteshadow">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <img src="img/catalog/liquids/17.jpg" class="img-responsive imgbox" alt="" style="height: 300px; margin: 0 auto;">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Doppelganger Ivory Temple 30мл; 3/0 мг</h4>
+                        <p class="redcolorbold">440 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="order" class="bg-light-gray phpform">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <br>
+                    <p style="font-size: 18px; font-family: 'Rye', cursive;">Заполните форму ниже и получите <span class="redcolor">скидку  5%</span> на ваш первый заказ из наших новинок!</p>
+                    <p class="text-muted"><i class="fa fa-lock fa-fw " aria-hidden="true"></i>Ваши данные <b>не</b> будут переданы третьим лицам.</p>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 50px;">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-lg-4 col-lg-offset-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ваше имя *" id="name" required data-validation-required-message="Пожалуйста, введите Ваше имя.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Ваш номер телефона *" id="phone" required data-validation-required-message="Пожалуйста, введите Ваш номер телефона.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-danger btn100" style="background-color: #100e0e; border: black;">Получить скидку!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages-section">
+        <div class="row">
+            <div class="text-center">
+                <h3><span class="redcolor">ПРЕИМУЩЕСТВА НАШЕЙ КОМПАНИИ</span></h3></div>
+            <div class="text-center col-lg-6 col-lg-offset-3">
+                <p style="font-size: 16px; font-family: 'Rye', cursive;">Работая с нашей компанией вы получаете не только высококачественную и оперативную клиентскую поддержку, но еще и скидку <span class="redcolorbold">10%</span> постоянного клиента!</p>
+            </div>
+            <div class="advantages col-lg-8 col-lg-offset-3">
+                <div class="col-md-3 text-center advantagesDiv3">
+                    <i class="fa fa-clock-o fa-5x redcolor" aria-hidden="true"></i>
+                    <p>Быстрая доставка курьером по Красноярску без предоплаты!</p>
+                </div>
+                <div class="col-md-3 text-center advantagesDiv3">
+                    <i class="fa fa-thumbs-o-up fa-5x redcolor" aria-hidden="true"></i>
+                    <p>Гарантия на абсолютно любой приобретенный товар!</p>
+                </div>
+                <div class="col-md-3 text-center advantagesDiv3">
+                    <i class="fa fa-heart-o fa-5x redcolor" aria-hidden="true"></i>
+                    <p>Забота о клиентах, оперативная обратная связь!</p>
+                </div>
+                <div class="col-md-3 text-center advantagesDiv3">
+                    <i class="fa fa-gift fa-5x redcolor" aria-hidden="true"></i>
+                    <p>Накопительные карты, скидки и другие подарки всем нашим клиентам! </p>
+                </div>
+            </div>
+    </section>
+    <!-- <div class="top-border">
+	<div class="top-border-left" style="border-left-width: 717px;"></div>
+	<div class="top-border-right" style="border-left-width: 717px;"></div>
+</div>
+ -->
+    <section class="contactsection" id="cont" style="padding: 50px;">
+        <div class="row">
+            <div class="text-center">
+                <h3>Контактная информация</h3></div>
+                <hr>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li class="contactLi"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span style="opacity: 0.7;"><span style="color: #f60a20">Адрес:</span></span><span style="color: white"> г. Красноярск, пр-кт Свободный, д. 28А</span></li>
+                    <li class="contactLi"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <span style="opacity: 0.7;">  <span style="color: #f60a20">Звоните нам: </span></span>
+                        <span style="font-weight: 700">+7-371-280-57-37</span></li>
+                    <li class="contactLi"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span style="opacity: 0.7;"> <span style="color: #f60a20"> E-mail: </span> </span>
+                        <span style="font-weight: 700">badboyvape@mail.ru</span></li>
+                    <li class="contactLi">
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    <span style="opacity: 0.7;">  <span style="color: #f60a20">Полный каталог: </span></span>
+                    <a href="https://vk.com/market-116240707" target="_blank" style="color: #866ab8;">по этой ссылке<i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row text-center">
+                    <hr>
+            <div class="col-lg-4 col-lg-offset-2">
+                <h2>Мы в сети:</h2>
+            </div>
+            <div class="col-lg-4 weInSocial">
+                <div class="abcde">
+                <ul class="list-inline banner-social-buttons socialButtonsLi">
+                    <li>
+                        <a href="https://www.instagram.com/badboyvape/" class="btn btn-default btn-lg bntArrr" target="_blank"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Инстаграм</span></a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/badboykrsk" class="btn btn-default btn-lg bntArrr" target="_blank"><i class="fa fa-vk fa-fw"></i> <span class="network-name">ВКонтакте</span></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+                    <hr>
+        <div class="text-center">
+            <h2>Мы на карте</h2>
+        </div>
+        <br>
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=06j-5S3Ub2wWRmOAyhLE5EMKT6lz0cDr&amp;width=100%25&amp;height=280&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        </div>
+    </section>
+    <section id="contactsocial" class="contact-section">
+        <div class="banner" style="padding-bottom: 200px; padding-top: 30px; font-family: 'Rye', cursive;">
+            <div class="col-md-3 col-md-offset-1 text-center">
+                <div>
+                    <p style="font-size: 24px;"><b><span class="redcolor">B</span>ad
+	     <span class="redcolor">B</span>oy
+	      <span class="redcolor">Vape</span>Shop</b></p>
+                </div>
+                <div>
+                    <p style="font-size: 18px;"><i class="fa fa-map-marker" aria-hidden="true"></i> Адрес: г. Красноярск, пр-кт Свободный, д. 28А</p>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-3 text-center">
+                <div>
+                    <p style="font-size: 24px;">+7-371-280-57-37</p>
+                </div>
+                <div>
+                    <a class="page-scroll" href="#order" style="margin-left: 0px">
+                        <button class="btn btn-danger">Заказать обратный звонок</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- button_up -->
+    <div id="ups">
+        <a id="toTo_button" class="page-scroll" href="#page-top" style="display: none;">
+            <i class="fa fa-arrow-circle-up fa-3x redcolor" aria-hidden="true" style="z-index: 1111;"></i>
+        </a>
+    </div>
+    <!-- Footer -->
+    <footer style="padding: 5px; background-color: #474848; font-family: 'Rye', cursive;">
+        <div class="container">
+            <div class="row">
+                <!-- <img src="img/12.png" style="max-height: 250px;"> -->
+                <p class="copyright text-muted" style="color: white;">&copy; Copyright 2016 - Bad Boy VAPE - All Rights Reserved.</p>
+                <p style="margin-bottom: 0; color: white;">г. Красноярск</p>
+                <p class="copyright text-muted" style="font-size: 11px; margin-top: 0; color: white;">Made by:
+                    <a href="https://vk.com/just_a_stranger" target="_blank" style="color: white; font-family: Coiny; font-size: 14px;">Arekosandoru</a>
+                    <span>&</span> <a href="https://vk.com/screenshot" target="_blank" style="color: white; font-family: Coiny; font-size: 14px;">
+                Fedor Morozov</a></p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+    function border_width() {
+        var w = $(window).width() / 2;
+        $('.top-border-left, .top-border-right').css('border-left-width', w);
+    }
+    </script>
+    <script type="text/javascript">
+    jQuery(function(f) {
+        var element = f('#toTo_button');
+        f(window).scroll(function() {
+            element['fade' + (f(this).scrollTop() > 500 ? 'In' : 'Out')](1000);
+        });
+        $(window).resize(function() {
+            border_width();
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".navbar-brand").css("display", "none");
+        $(".navbar-brand").fadeIn(5000);
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('#but1').click(function() {
+            $('#modal').fadeIn(300);
+        });
+        $('#modal').on('click', function(e) {
+            if (e.target.id == 'modal') {
+                $(this).hide();
+            }
+        });
+        $('#but2').click(function() {
+            $('#form2').show(300);
+        });
+    });
+    </script>
+</body>
+
+</html>
